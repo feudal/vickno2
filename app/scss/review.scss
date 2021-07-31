@@ -1,0 +1,390 @@
+/*****--------------------organisation-----------------*****/
+.organisation {
+  display: flex;
+  margin-bottom: 46px;
+
+  &__block {
+    background: #DDE8FF;
+    border-radius: 5px;
+    padding: 16px 18px;
+    min-height: 135px;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__link {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $blue;
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+
+
+    &:hover {
+      &::after {
+        transform: translateX(10px);
+      }
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-left: 12px;
+
+      transition: all .3s;
+      background: url(../img/icons/blue-arrow.svg) no-repeat center center;
+    }
+
+  }
+}
+
+/*****--------------------organisation-----------------*****/
+
+/*****--------------------review-----------------*****/
+.review {
+  &__main-title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 32px;
+  }
+
+  &__group {
+    margin-bottom: 40px;
+  }
+
+  &__block {
+    background: #F7FAE9;
+    border-radius: 5px;
+    padding: 16px;
+
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+
+    &--info {
+      background: #F7F7F7;
+      padding-left: 48px;
+
+      position: relative;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 16px;
+
+        width: 24px;
+        height: 24px;
+        margin-left: 12px;
+
+        background: url(../img/icons/blue-info.svg) no-repeat center center;
+      }
+    }
+  }
+
+  &__list {
+    margin-bottom: 64px;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+  }
+
+  &__title-info {
+  	cursor: pointer;
+    content: '';
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+
+    background: url(../img/icons/blue-question.svg) no-repeat center center;
+  }
+
+  &__hint {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 370px;
+    padding: 10px 16px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      border-bottom: 12px solid #fff;
+      border-top: 12px solid transparent;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+
+      position: absolute;
+      top: -24px;
+      left: calc(50% - 7px);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__marks {}
+
+  &__checkbox-label {}
+
+  &__checkbox {}
+
+  &__checkbox-fake {}
+}
+
+.marks {
+  display: flex;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  margin-right: 40px;
+
+  &__item {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 50%;
+
+    color: $blue;
+    background: #DDE8FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s;
+
+    &:hover {
+      color: #fff;
+      background: $blue;
+    }
+
+    &--active {
+      color: #fff;
+      background: $blue;
+    }
+
+    &--disabled {
+      pointer-events: none;
+      color: #B7BFC5;
+      background: #D1DBE3;
+      opacity: 0.3;
+    }
+  }
+}
+
+/*****--------------------review-----------------*****/
+
+/*****--------------------review__check-box-----------------*****/
+.review {
+  &__checkbox-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox-fake {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    margin-right: 10px;
+    position: relative;
+  }
+
+  &__checkbox-fake::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background: url(../img/icons/bifa.svg) no-repeat center center;
+    opacity: 0;
+    transition: all .2s;
+  }
+}
+
+.review__checkbox:checked+.review__checkbox-fake::before {
+  opacity: 1;
+}
+
+/*****--------------------review__check-box-----------------*****/
+
+/*****--------------------comment-----------------*****/
+.comment {
+  width: 656px;
+  margin-bottom: 64px;
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 26px;
+  }
+
+  &__info {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 32px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../img/icons/blue-info.svg) no-repeat center center;
+    }
+  }
+
+  &__textarea {
+    resize: vertical;
+
+    background: #F4F4F4;
+    border: 1px solid #F4F4F4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 24px;
+    height: 260px;
+    width: 100%;
+
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $link-grey;
+
+    margin-bottom: 24px;
+  }
+
+
+  &__button {}
+}
+
+/*****--------------------comment-----------------*****/

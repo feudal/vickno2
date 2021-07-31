@@ -1,0 +1,618 @@
+/*****------------------individual-application-----------------*****/
+.individual-application {
+  border: 1px solid #D1DBE3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 40px 32px 0;
+
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 64px;
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 24px;
+  }
+
+  &__choise {
+    width: 430px;
+    margin-bottom: 48px;
+  }
+
+  &__label {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+  }
+
+  &__select {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 10px 16px;
+
+    cursor: pointer;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    margin-bottom: 24px;
+  }
+
+  &__option {}
+
+  &__textarea {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px;
+
+    resize: vertical;
+    height: 160px;
+  }
+
+  &__information {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    margin-left: auto;
+  }
+
+  &__subtitle {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 24px;
+  }
+
+  &__list {}
+
+  &__item {
+    border-top: 1px solid #D1DBE3;
+    padding: 40px 0 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 428px 180px 60px;
+  }
+
+  &__chop {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__marks {
+    display: flex;
+  }
+
+  &__group {
+    margin-right: 20px;
+  }
+
+  &__mark {
+    width: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__city {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: $link-grey;
+    margin-top: 8px;
+  }
+
+  &__delete {
+    cursor: pointer;
+
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    text-decoration: underline;
+    color: $red;
+  }
+
+  &__bottom {
+    background: #F7F7F7;
+    padding: 20px 32px;
+    width: calc(100% + 64px);
+    position: relative;
+    left: -32px;
+
+    display: flex;
+  }
+}
+
+.info {
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  background: #F7F7F7;
+  border-radius: 5px;
+  padding: 16px 16px 16px 48px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/blue-info.svg) no-repeat center center;
+
+    position: absolute;
+    left: 16px;
+  }
+}
+
+
+/*****------------------individual-application-----------------*****/
+
+/*****--------------------calculation-----------------*****/
+.calculation {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: right;
+
+  margin-left: auto;
+  width: 460px;
+  margin-bottom: 64px;
+
+  &__line-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__value {}
+
+  &__line {
+    border-top: 1px solid #D1DBE3;
+    margin-top: 24px;
+    margin-bottom: 42px;
+  }
+
+  &__total {}
+}
+
+/*****--------------------calculation-----------------*****/
+
+/*****--------------------application-----------------*****/
+.application {
+  overflow: hidden;
+  border: 1px solid #D1DBE3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 40px;
+
+  &__section {
+
+    position: relative;
+    padding: 0 32px;
+
+    counter-increment: count-me;
+
+    &::before {
+      display: inline-block;
+      list-style-position: inside;
+      content: counter(count-me);
+
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 1px solid #D1DBE3;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+
+      position: absolute;
+      top: 32px;
+    }
+
+    &--hidden {
+      .application__top {
+        margin-bottom: 0;
+      }
+
+      .application__list {
+        display: none;
+      }
+    }
+
+    &--disabled {
+      border-bottom: 1px solid #D1DBE3;
+      color: #A0A0A0 !important;
+
+      .application__bottom {
+        display: none;
+      }
+
+      .application__change {
+        display: block;
+      }
+
+      .application__info {
+        color: #A0A0A0 !important;
+      }
+    }
+  }
+
+  &__top {
+    height: 57px;
+    height: 120px;
+    width: calc(100% + 64px);
+    position: relative;
+    left: -32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #D1DBE3;
+    padding: 32px;
+    margin-bottom: 16px;
+  }
+
+  &__main-title {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding-left: 70px;
+
+
+  }
+
+  &__change {
+    display: none;
+  }
+
+  &__list {}
+
+  &__item {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px 0;
+    border-bottom: 1px solid #D1DBE3;
+
+    &:nth-last-child(2) {
+      border: 0;
+    }
+
+  }
+
+  &__left {
+    max-width: 50%;
+  }
+
+  &__right {}
+
+  &__title {
+    &--grey {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $link-grey;
+    }
+  }
+
+  &__info {
+    &--blue {
+      color: $blue;
+    }
+  }
+
+  &__information {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $link-grey;
+    padding-left: 34px;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+
+      position: absolute;
+      left: 0;
+
+      background: url(../img/icons/blue-info.svg) no-repeat center center;
+    }
+  }
+
+  &__link {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    text-decoration: underline;
+    color: $blue;
+    margin-top: 8px;
+  }
+
+  &__bottom {
+
+    width: calc(100% + 64px);
+    position: relative;
+    left: -32px;
+    background: #F7F7F7;
+
+    padding: 20px 32px;
+
+    display: flex;
+  }
+
+  &__button {
+    margin-left: auto;
+    width: 230px;
+  }
+
+  &__calendar {
+    width: 200px;
+    border: 1px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 24px;
+  }
+
+  /*****--------------------form-----------------*****/
+  &__form {
+    width: 428px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px;
+
+    margin-bottom: 16px;
+
+    &::placeholder {
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000;
+    }
+  }
+
+  &__textarea {
+    resize: vertical;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px;
+
+    margin-bottom: 16px;
+
+    &::placeholder {
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000;
+    }
+  }
+
+  /*****--------------------form-----------------*****/
+}
+
+/*****--------------------application-----------------*****/
+
+/*****--------------------confirmaiton-----------------*****/
+.application-confirm {
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 32px;
+
+  margin-bottom: 56px;
+
+  &__left {}
+
+  &__text {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    p {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__link {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration: underline;
+    color: $blue;
+  }
+
+  &__aside {
+    background: #F6F6F6;
+    border-radius: 15px;
+    padding: 24px;
+  }
+
+  &__aside-main-title {
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 24px;
+  }
+
+  &__aside-title {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 8px;
+  }
+
+  &__aside-value {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #A0A0A0;
+    margin-bottom: 16px;
+  }
+
+  &__aside-total {
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*****--------------------confirmaiton-----------------*****/

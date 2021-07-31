@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>bonus</title>
+</head>
+
+<body>
+  @@include('./components/header.html')
+  @@include('./components/filter.html')
+  <main class="main">
+    <div class="container">
+            <!--                         mobile-menu                         -->
+      <div class="cabinet__menu-mobile">Меню личного кабинета</div>
+      <!--                         mobile-menu                         -->
+      <!--                         cabinet                         -->
+      <div class="cabinet">
+        <ul class="cabinet__menu">
+          <li class="cabinet__menu-item">
+            <h3 class="cabinet__menu-title">Заказы и заявки</h3>
+          </li>
+          <li class="cabinet__menu-item"><a href="profile-info.html" class="cabinet__menu-link">Мои данные</a></li>
+          <li class="cabinet__menu-item"><a href="bonus.html" class="cabinet__menu-link">Бонусный счет</a></li>
+        </ul>
+        <aside class="cabinet__aside">
+          <div class="cabinet__row">
+            <div class="cabinet__row-span">
+              <span>Ваш баланс:</span>
+              <span class="cabinet__row-span--black">200 бонусов</span>
+            </div>
+          </div>
+          <div class="cabinet__row">
+            <div class="cabinet__row-span">
+              <p>№000</p>
+              <p>от 18.02.2021</p>
+            </div>
+            <div class="cabinet__row-info">Начислено бонусов за покупку</div>
+            <div class="cabinet__row-bonus">+ 100 бонусов</div>
+          </div>
+          <div class="cabinet__row">
+            <div class="cabinet__row-span">
+              <p>№000</p>
+              <p>от 18.02.2021</p>
+            </div>
+            <div class="cabinet__row-info">Списано бонусов при покупке</div>
+            <div class="cabinet__row-bonus cabinet__row-bonus--red">- 100 бонусов</div>
+          </div>
+        </aside>
+      </div>
+      <!--                         cabinet                         -->
+      @@include('./components/question.html')
+    </div>
+  </main>
+  @@include('./components/contact-short.html')
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

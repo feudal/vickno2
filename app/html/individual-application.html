@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Individual application</title>
+</head>
+
+<body>
+  @@include('./components/header.html')
+  @@include('./components/filter.html')
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+        <a href="main-services.html" class="breadcrumbs__link">Оформление заказа</a>
+      </div>
+      <!--                         breadcrumbs                         -->
+      <h2 class="main-title">Заявка на индивидуальную<br> охрану</h2>
+      <!--                         individual-application                         -->
+      <form action="" class="individual-application">
+        <h3 class="individual-application__title">Данные заявки</h3>
+        <div class="individual-application__choise">
+          <div class="individual-application__label">Тип охраны</div>
+          <select name="" id="" class="individual-application__select">
+            <option class="individual-application__option">Физическая охрана</option>
+            <option class="individual-application__option">Физическая </option>
+          </select>
+          <div class="individual-application__label">Тип недвижимости</div>
+          <select name="" id="" class="individual-application__select">
+            <option class="individual-application__option">Коммерческая недвижимость</option>
+            <option class="individual-application__option">Коммерческая</option>
+          </select>
+          <div class="individual-application__label">Населенный пункт</div>
+          <select name="" id="" class="individual-application__select">
+            <option class="individual-application__option">Выберите город</option>
+            <option class="individual-application__option">Москва</option>
+            <option class="individual-application__option">Санкт Петербург</option>
+          </select>
+          <div class="individual-application__label">Комментрарий</div>
+          <textarea class="individual-application__textarea" placeholder="Например: необходимо обеспечить охрану и пожарную безопасность коммерческого помещения в г. Суздаль"></textarea>
+        </div>
+        <h3 class="individual-application__title">Охранные организации</h3>
+        <div class="container-left">
+          <div class="individual-application__information info">
+            Вы можете выбрать одну или несколько охранных компаний, работающих в вашем городе и добавить их в заявку. Мы совместно с сотрудниками каждой из компаний подготовим индивидуальные предложения персонально для вас.
+          </div>
+          <a href="individual-application-list.html" class="individual-application__button button button--blue">перейти в список</a>
+          <div class="padding-40"></div>
+          <h4 class="individual-application__subtitle">Выбрано 4 организации</h4>
+          <ul class="individual-application__list">
+            <li class="individual-application__item">
+              <div class="individual-application__chop">ООО «ЧОП «ЗУБР» г. Краснодар, очень длинное название в две строки</div>
+              <div class="individual-application__marks">
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--blue">8.2</div>
+                  <div class="individual-application__city">Краснодар</div>
+                </div>
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--light-blue">8.2</div>
+                  <div class="individual-application__city">по России</div>
+                </div>
+              </div>
+              <div class="individual-application__delete">Удалить</div>
+            </li>
+            <li class="individual-application__item">
+              <div class="individual-application__chop">ООО «ЧОП «ЗУБР» г. Краснодар, очень длинное название в две строки</div>
+              <div class="individual-application__marks">
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--blue">8.2</div>
+                  <div class="individual-application__city">Краснодар</div>
+                </div>
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--light-blue">8.2</div>
+                  <div class="individual-application__city">по России</div>
+                </div>
+              </div>
+              <div class="individual-application__delete">Удалить</div>
+            </li>
+            <li class="individual-application__item">
+              <div class="individual-application__chop">ООО «ЧОП «ЗУБР» г. Краснодар, очень длинное название в две строки</div>
+              <div class="individual-application__marks">
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--blue">8.2</div>
+                  <div class="individual-application__city">Краснодар</div>
+                </div>
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--light-blue">8.2</div>
+                  <div class="individual-application__city">по России</div>
+                </div>
+              </div>
+              <div class="individual-application__delete">Удалить</div>
+            </li>
+            <li class="individual-application__item">
+              <div class="individual-application__chop">ООО «ЧОП «ЗУБР» г. Краснодар, очень длинное название в две строки</div>
+              <div class="individual-application__marks">
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--blue">8.2</div>
+                  <div class="individual-application__city">Краснодар</div>
+                </div>
+                <div class="individual-application__group">
+                  <div class="individual-application__mark button button--light-blue">8.2</div>
+                  <div class="individual-application__city">по России</div>
+                </div>
+              </div>
+              <div class="individual-application__delete">Удалить</div>
+            </li>
+          </ul>
+        </div>
+        <div class="individual-application__bottom">
+          <a href="application.html" class="individual-application__button button button--blue">продолжить</a>
+        </div>
+      </form>
+      <!--                         individual-application                         -->
+      @@include('./components/question.html')
+    </div>
+  </main>
+      @@include('./components/contact-short.html')
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Security companies</title>
+</head>
+
+<body>
+  @@include('./components/header.html')
+  @@include('./components/filter.html')
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+        <a href="" class="breadcrumbs__link">Охранные предприятия</a>
+      </div>
+      <!--                         breadcrumbs                         -->
+      <!--                         chop-list                         -->
+      <div class="chop">
+        <h2 class="chop__main-title">Рейтинг охранных предприятий</h2>
+        <div class="chop__filter">
+          <div class="chop__column">
+            <h3 class="chop__title">Населенный пункт</h3>
+            <select name="" id="" class="chop__select chop__select--loc">
+              <option class="chop__option">Петропавловск-Камчатский</option>
+              <option class="chop__option">Камчатский</option>
+              <option class="chop__option">Петропавловск</option>
+            </select>
+          </div>
+          <div class="chop__column">
+            <h3 class="chop__title">Тип охраны</h3>
+            <select name="" id="" class="chop__select">
+              <option class="chop__option">Физическая охрана</option>
+              <option class="chop__option"> охрана</option>
+              <option class="chop__option">Физическая </option>
+            </select>
+          </div>
+          <div class="chop__column">
+            <h3 class="chop__title">Что охраняем</h3>
+            <select name="" id="" class="chop__select">
+              <option class="chop__option">Коммерческая недвижимость</option>
+              <option class="chop__option">Коммерческая </option>
+              <option class="chop__option"> недвижимость</option>
+            </select>
+          </div>
+          <div class="chop__column">
+            <button class="chop__button button button--blue">показать</button>
+          </div>
+        </div>
+        <div class="chop__sort">
+          <h3 class="chop__sort-title">Сортировка:</h3>
+          <select id="" class="chop__sort-select">
+            <option class="chop__sort-option">по рейтингу</option>
+            <option class="chop__sort-option">по цене</option>
+            <option class="chop__sort-option">по распространению</option>
+          </select>
+        </div>
+        <ul class="chop__list">
+          <li class="chop__item">
+            <h3 class="chop__item-title-mobile">ООО «ЧОП «ЗУБР» Краснодар длинное название в три линии строки</h3>
+            <div class="chop__item-column">
+              <div class="chop__item-mark button button-long button--blue">8.2</div>
+              <div class="chop__item-info">Краснодар</div>
+              <div class="chop__item-mark button button-long button--light-blue">8.2</div>
+              <div class="chop__item-info">по России</div>
+              <div class="chop__item-question">Как считается рейтинг?</div>
+            </div>
+            <div class="chop__item-column">
+              <h3 class="chop__item-title">ООО «ЧОП «ЗУБР»</h3>
+              <ul class="chop__item-icons">
+                <li class="chop__item-icon">
+                  <img src="img/star-ru.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-person.png" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-lightning.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-check.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-payment.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-like.svg" alt="">
+                </li>
+              </ul>
+              <ul class="chop__item-tags">
+                <li class="chop__item-tag">Физическая охрана</li>
+                <li class="chop__item-tag">Пожарная охрана</li>
+                <li class="chop__item-tag">Мобильная охрана</li>
+              </ul>
+              <div class="chop__item-text">Все охранники проходят ежегодную проверку профпригодности и сдают экзамены по правовой подготовке, тактико-специальной подготовке, первой медицинской помощи, технической подготовке, огневой подготовке и использованию специальных средств.</div>
+              <span class="chop__item-span">Присутствует в <a href="" class="chop__item-link">36 городах</a></span>
+            </div>
+            <div class="chop__item-column">
+              <div class="chop__item-price-desc">Стоимость обслуживания</div>
+              <div class="chop__item-price">240 руб/в мес</div>
+              <div class="chop__item-price-desc">Подключение и монтаж</div>
+              <div class="chop__item-price">Бесплатно</div>
+              <a href="security-company.html" class="chop__item-button button button--transparent">подробнее</a>
+            </div>
+          </li>
+          <li class="chop__item">
+            <h3 class="chop__item-title-mobile">ООО «ЧОП «ЗУБР» Краснодар длинное название в три линии строки</h3>
+            <div class="chop__item-column">
+              <div class="chop__item-mark button button-long button--blue">8.2</div>
+              <div class="chop__item-info">Краснодар</div>
+              <div class="chop__item-mark button button-long button--light-blue">8.2</div>
+              <div class="chop__item-info">по России</div>
+              <div class="chop__item-question">Как считается рейтинг?</div>
+            </div>
+            <div class="chop__item-column">
+              <h3 class="chop__item-title">ООО «ЧОП «ЗУБР»</h3>
+              <ul class="chop__item-icons">
+                <li class="chop__item-icon">
+                  <img src="img/star-ru.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-person.png" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-lightning.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-check.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-payment.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-like.svg" alt="">
+                </li>
+              </ul>
+              <ul class="chop__item-tags">
+                <li class="chop__item-tag">Физическая охрана</li>
+                <li class="chop__item-tag">Пожарная охрана</li>
+                <li class="chop__item-tag">Мобильная охрана</li>
+              </ul>
+              <div class="chop__item-text">Все охранники проходят ежегодную проверку профпригодности и сдают экзамены по правовой подготовке, тактико-специальной подготовке, первой медицинской помощи, технической подготовке, огневой подготовке и использованию специальных средств.</div>
+              <span class="chop__item-span">Присутствует в <a href="" class="chop__item-link">36 городах</a></span>
+            </div>
+            <div class="chop__item-column">
+              <div class="chop__item-price-desc">Стоимость обслуживания</div>
+              <div class="chop__item-price">240 руб/в мес</div>
+              <div class="chop__item-price-desc">Подключение и монтаж</div>
+              <div class="chop__item-price">Бесплатно</div>
+              <a href="security-company.html" class="chop__item-button button button--transparent">подробнее</a>
+            </div>
+          </li>
+          <li class="chop__item">
+            <h3 class="chop__item-title-mobile">ООО «ЧОП «ЗУБР» Краснодар длинное название в три линии строки</h3>
+            <div class="chop__item-column">
+              <div class="chop__item-mark button button-long button--blue">8.2</div>
+              <div class="chop__item-info">Краснодар</div>
+              <div class="chop__item-mark button button-long button--light-blue">8.2</div>
+              <div class="chop__item-info">по России</div>
+              <div class="chop__item-question">Как считается рейтинг?</div>
+            </div>
+            <div class="chop__item-column">
+              <h3 class="chop__item-title">ООО «ЧОП «ЗУБР»</h3>
+              <ul class="chop__item-icons">
+                <li class="chop__item-icon">
+                  <img src="img/star-ru.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-person.png" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-lightning.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-check.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-payment.svg" alt="">
+                </li>
+                <li class="chop__item-icon">
+                  <img src="img/star-like.svg" alt="">
+                </li>
+              </ul>
+              <ul class="chop__item-tags">
+                <li class="chop__item-tag">Физическая охрана</li>
+                <li class="chop__item-tag">Пожарная охрана</li>
+                <li class="chop__item-tag">Мобильная охрана</li>
+              </ul>
+              <div class="chop__item-text">Все охранники проходят ежегодную проверку профпригодности и сдают экзамены по правовой подготовке, тактико-специальной подготовке, первой медицинской помощи, технической подготовке, огневой подготовке и использованию специальных средств.</div>
+              <span class="chop__item-span">Присутствует в <a href="" class="chop__item-link">36 городах</a></span>
+            </div>
+            <div class="chop__item-column">
+              <div class="chop__item-price-desc">Стоимость обслуживания</div>
+              <div class="chop__item-price">240 руб/в мес</div>
+              <div class="chop__item-price-desc">Подключение и монтаж</div>
+              <div class="chop__item-price">Бесплатно</div>
+              <a href="security-company.html" class="chop__item-button button button--transparent">подробнее</a>
+            </div>
+          </li>
+        </ul>
+        <a href="" class="chop__button button button--long button--transparent">ПОКАЗАТЬ ЕЩЕ</a>
+      </div>
+      <!--                         chop-list                         -->
+
+    @@include('./components/mini-articles.html')
+    @@include('./components/question.html')
+    </div>
+  </main>
+  @@include('./components/contact.html')
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

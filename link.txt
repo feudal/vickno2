@@ -1,0 +1,6 @@
+О компании(index)
+Страхование ???
+Выбор охранной компании(spisok chopov) > (uslugi, individualnaia zaiavka, otzivi)
+Пакеты охранных услуг > cartochka paketa uslug
+Комплекты оборудования > kartochka oborudovania
+vincКОМБО paketi > kartochka paketa vincKOMBO 

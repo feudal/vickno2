@@ -1,0 +1,944 @@
+/*****--------------------chop-----------------*****/
+@media only screen and (max-width: 1024px) {
+  .chop {
+    &__list {}
+
+    &__item {}
+
+    &__item-column {
+      margin-right: 25px;
+    }
+
+    &__item-mark {}
+
+    &__item-info {}
+
+    &__item-question {}
+
+    &__item-title {}
+
+    &__item-icons {}
+
+    &__item-icon {}
+
+    &__item-tags {}
+
+    &__item-tag {}
+
+    &__item-text {}
+
+    &__item-span {}
+
+    &__item-link {}
+
+    &__item-price-desc {}
+
+    &__item-price {}
+
+    &__item-button {}
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .chop {
+    &__main-title {
+      margin-bottom: 24px;
+    }
+
+    &__sort {
+      display: none;
+    }
+
+    &__list {}
+
+    &__item {
+      flex-direction: column;
+    }
+
+    &__item-column {
+      margin-right: 25px;
+      margin-right: 0;
+    }
+
+    &__item-mark {
+      display: inline-block;
+      width: 54px;
+      padding: 0;
+    }
+
+    &__item-info {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+
+      position: relative;
+      left: 65px;
+      top: -22px;
+
+      max-width: 50%;
+    }
+
+    &__item-question {
+      display: none;
+    }
+
+    &__item-title {
+      display: none;
+    }
+
+    &__item-title-mobile {
+      display: block;
+      font-family: Gilroy;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      margin-bottom: 16px;
+      width: 50%;
+    }
+
+    &__item-icons {}
+
+    &__item-icon {}
+
+    &__item-tags {}
+
+    &__item-tag {}
+
+    &__item-text {}
+
+    &__item-span {}
+
+    &__item-link {}
+
+    &__item-price-desc {}
+
+    &__item-price {}
+
+    &__item-button {}
+
+
+    .button--transparent {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .chop {
+    &__list {}
+
+    &__item {
+      padding: 10px 16px;
+    }
+
+    &__item-column {}
+
+    &__item-mark {}
+
+    &__item-info {
+
+    }
+
+    &__item-question {}
+
+    &__item-title {}
+
+    &__item-title-mobile {
+      width: 60%;
+    }
+
+    &__item-icons {}
+
+    &__item-icon {}
+
+    &__item-tags {}
+
+    &__item-tag {}
+
+    &__item-text {}
+
+    &__item-span {}
+
+    &__item-link {}
+
+    &__item-price-desc {}
+
+    &__item-price {}
+
+    &__item-button {}
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .chop {
+    &__list {}
+
+    &__item {}
+
+    &__item-column {}
+
+    &__item-mark {}
+
+    &__item-info {}
+
+    &__item-question {}
+
+    &__item-title {}
+
+    &__item-title-mobile {
+      width: 80%;
+    }
+
+    &__item-icons {
+      margin-bottom: 16px;
+    }
+
+    &__item-icon {
+      margin-right: 5px;
+    }
+
+    &__item-tags {
+      margin-bottom: 0;
+    }
+
+    &__item-tag {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 5px;
+    }
+
+    &__item-text {
+      font-size: 11px;
+      line-height: 14px;
+      margin-bottom: 16px;
+    }
+
+    &__item-span {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__item-link {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__item-price-desc {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__item-price {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__item-button {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
+
+/*****--------------------chop-----------------*****/
+
+
+/*****--------------------chop__filter-----------------*****/
+
+@media only screen and (max-width: 1024px) {
+
+
+  .chop {
+    &__filter {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+
+    &__column {}
+
+    &__title {}
+
+    &__select {
+      &--loc {}
+    }
+
+    &__option {}
+
+    &__button {}
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .chop__filter {
+    border: 1px solid red;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------chop__filter-----------------*****/
+
+
+/*****--------------------company-----------------*****/
+@media only screen and (max-width: 1024px) {
+  .company {
+    flex-direction: column;
+
+    &__content {}
+
+    &__main-title {}
+
+    &__verefied {}
+
+    &__line-info {}
+
+    &__city {}
+
+    &__span {}
+
+    &__link {}
+
+    &__title {}
+
+    &__text {}
+
+    &__grid {}
+
+    &__grid-item {}
+
+    &__grid-logo {}
+
+    &__grid-date {}
+
+    &__grid-actuale {}
+
+    &__grid-views-month {}
+
+    &__grid-views {}
+
+    &__box {
+      width: 100%;
+      min-width: 100%;
+      margin-left: 0;
+      margin-top: 32px;
+    }
+
+    &__mini-grid {}
+
+    &__box-list {}
+
+    &__box-button {
+      width: 50%;
+      display: block;
+      margin-right: auto;
+    }
+  }
+
+  .mini-grid {
+    &__city {}
+
+    &__rating {}
+
+    &__mark {}
+  }
+
+  .rate-list {
+    &__item {}
+
+    &__logo {}
+
+    &__link {}
+
+    &__mark {}
+
+    &__fill {}
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .company {
+    &__content {}
+
+    &__main-title {}
+
+    &__verefied {}
+
+    &__line-info {
+      flex-direction: column;
+      text-align: left;
+      align-items: start;
+      padding: 0;
+
+      border: 0;
+    }
+
+    &__city {}
+
+    &__span {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    &__link {}
+
+    &__title {}
+
+    &__text {}
+
+    &__grid {
+
+      grid-template-columns: 1fr;
+    }
+
+    &__grid-item {}
+
+    &__grid-logo {}
+
+    &__grid-date {}
+
+    &__grid-actuale {}
+
+    &__grid-views-month {}
+
+    &__grid-views {}
+
+    &__box {
+      margin-bottom: 32px;
+    }
+
+    &__mini-grid {}
+
+    &__box-list {}
+
+    &__box-button {
+      width: 100%;
+    }
+  }
+
+  .mini-grid {
+    &__city {}
+
+    &__rating {}
+
+    &__mark {}
+  }
+
+  .rate-list {
+    &__item {}
+
+    &__logo {}
+
+    &__link {}
+
+    &__mark {}
+
+    &__fill {}
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .company {
+    flex-direction: column;
+
+    &__content {}
+
+    &__main-title {}
+
+    &__verefied {}
+
+    &__line-info {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__city {}
+
+    &__span {}
+
+    &__link {}
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 127.3%;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+
+    &__grid {
+      width: 100%;
+      grid-column-gap: 8px;
+    }
+
+    &__grid-item {}
+
+    &__grid-logo {}
+
+    &__grid-date {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__grid-actuale {}
+
+    &__grid-views-month {}
+
+    &__grid-views {}
+
+    &__box {
+      padding: 16px 10px;
+    }
+
+    &__mini-grid {}
+
+    &__box-list {}
+
+    &__box-button {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .mini-grid {
+    &__city {}
+
+    &__rating {}
+
+    &__mark {}
+  }
+
+  .rate-list {
+    &__item {}
+
+    &__logo {}
+
+    &__link {}
+
+    &__mark {}
+
+    &__fill {}
+  }
+}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------company-----------------*****/
+
+/*****--------------------choise-packet-----------------*****/
+@media only screen and (max-width: 1024px) {
+
+  .choise-packet {
+    &__inner {}
+
+    &__card {
+      position: relative;
+      flex-direction: column;
+    }
+
+    &__column {
+      padding-left: 160px;
+
+      &:first-child {
+        position: absolute;
+        padding-left: 0;
+        width: 140px;
+      }
+
+      &:last-child {
+        margin-top: 20px;
+      }
+
+      .button {
+        width: calc(100% + 160px);
+        position: relative;
+        left: -160px;
+        margin-top: 18px;
+      }
+    }
+
+    &__img {}
+
+    &__title {}
+
+    &__text {}
+
+    &__list {}
+
+    &__list-item {}
+
+    &__list-title {}
+
+    &__info {}
+
+    &__price {}
+
+    &__button {}
+
+
+
+    &__discount {}
+
+    &__gift {}
+  }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------choise-packet-----------------*****/
+
+/*****--------------------choise-----------------*****/
+@media only screen and (max-width: 786px) {
+  .choise {
+    width: 100%;
+    margin-bottom: 20px;
+
+    &__item {
+      width: 33%;
+      margin-right: 0;
+      text-align: center;
+
+    }
+  }
+
+}
+
+/*****--------------------choise-----------------*****/
+
+/*****--------------------choise-option-----------------*****/
+@media only screen and (max-width: 768px) {
+
+  .choise-packet {
+    &__inner {}
+
+    &__card {}
+
+    &__column {}
+
+    &__img {}
+
+    &__title {}
+
+    &__text {}
+
+    &__list {
+      display: grid;
+      grid-template-rows: 1fr;
+    }
+
+    &__list-item {}
+
+    &__list-title {}
+
+    &__info {}
+
+    &__price {}
+
+    &__button {}
+
+    &__discount {}
+
+    &__gift {}
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .choise-packet {
+    &__inner {}
+
+    &__card {
+      padding: 16px 10px;
+    }
+
+    &__column {
+      padding-left: 120px;
+
+      .button {
+        width: calc(100% + 120px);
+        left: -120px;
+      }
+    }
+
+    &__img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__title {}
+
+    &__text {
+      margin-bottom: 0;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-rows: 1fr;
+      display: none;
+    }
+
+    &__list-item {}
+
+    &__list-title {}
+
+    &__info {}
+
+    &__price {}
+
+    &__button {}
+
+    &__discount {}
+
+    &__gift {}
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .choise-packet {
+    &__inner {}
+
+    &__card {
+      padding: 16px 10px;
+    }
+
+    &__column {
+      padding-left: 70px;
+
+      .button {
+        width: calc(100% + 70px);
+        left: -70px;
+      }
+    }
+
+    &__img {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 20px;
+
+    }
+
+    &__text {
+      margin-bottom: 0;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-rows: 1fr;
+      display: none;
+    }
+
+    &__list-item {}
+
+    &__list-title {}
+
+    &__info {}
+
+    &__price {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 0;
+    }
+
+    &__button {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__discount {
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 0;
+    }
+
+    &__gift {
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------choise-option-----------------*****/
+
+/*****--------------------choise-services-----------------*****/
+@media only screen and (max-width: 768px) {
+
+  .choise-service {
+    &__card {
+      padding: 40px 100px 40px;
+    }
+
+    &__logo {
+      left: 65px;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__button {}
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .choise-service {
+    &__card {
+      padding: 30px 60px 30px;
+    }
+
+    &__logo {
+      left: 25px;
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &__button {}
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .choise-service {
+    &__card {
+      border-radius: 5px;
+      padding: 16px 10px;
+    }
+
+    &__logo {
+      position: static;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 14px;
+
+      p {
+        margin-bottom: 13px;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------choise-services-----------------*****/
+
+/*****--------------------choise-review-----------------*****/
+@media only screen and (max-width: 480px) {
+
+  .choise-review {
+    &__inner {}
+
+    &__card {}
+
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__verified {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      font-size: 14px;
+      line-height: 23px;
+      &::before {
+        top: 0;
+      }
+    }
+
+    &__city {
+      font-size: 12px;
+      line-height: 23px;
+      margin-bottom: 16px;
+    }
+
+    &__mark {
+      margin-bottom: 25px;
+    }
+
+    &__button {}
+
+    &__mini-title {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__info-line {
+      font-size: 14px;
+      line-height: 23px;
+
+      position: relative;
+      padding-top: 30px;
+    }
+
+    &__date {
+      position: absolute;
+      top: 0;
+    }
+
+    &__question {}
+
+    &__rate {}
+
+    &__up {}
+
+    &__down {}
+
+    &__group {}
+  }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 320px) {}
+
+/*****--------------------choise-review-----------------*****/

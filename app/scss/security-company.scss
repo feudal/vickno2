@@ -1,0 +1,748 @@
+/*****--------------------company-----------------*****/
+.company {
+  display: flex;
+  margin-bottom: 45px;
+
+  &__content {}
+
+  &__main-title {
+    font-family: Gilroy;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+  }
+
+  &__verefied {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $blue;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+
+      background: url(../img/icons/badge-check.svg) no-repeat center center;
+    }
+  }
+
+  &__line-info {
+    border-bottom: 1px solid #D1DBE3;
+    padding: 13px 0;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__city {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $blue;
+  }
+
+  &__span {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-left: 24px;
+
+  }
+
+  &__link {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+
+  }
+
+  &__text {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+
+  &__grid-item {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $link-grey;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__grid-logo {
+    margin-right: 8px;
+  }
+
+  &__grid-date {}
+
+  &__grid-actuale {}
+
+  &__grid-views-month {}
+
+  &__grid-views {}
+
+
+  &__box {
+    min-width: 360px;
+    background: #FFFFFF;
+    border: 2px solid #005DFF;
+    border-radius: 15px;
+    padding: 24px;
+
+    margin-left: 32px;
+  }
+
+  &__box-list {}
+
+  &__box-button {
+    margin-top: 10px;
+  }
+
+  &__mini-grid {}
+}
+
+/*****--------------------mini-grid-----------------*****/
+.mini-grid {
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: 1fr 62px;
+
+  border: 2px solid #D1DBE3;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 18px;
+
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  &__city {
+    padding: 10px;
+    border-bottom: 2px solid #D1DBE3;
+    color: $blue;
+  }
+
+  &__rating {
+    padding: 10px;
+    color: $link-grey;
+    font-weight: 500;
+  }
+
+  &__mark {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: $blue;
+    color: #fff;
+    position: relative;
+    top: -2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+/*****--------------------mini-grid-----------------*****/
+
+/*****--------------------company-----------------*****/
+
+/*****--------------------rate-list-----------------*****/
+.rate-list {
+  list-style-type: none;
+  color: $blue;
+
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  &__item {
+    position: relative;
+
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 6px;
+    padding: 0 8px;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 10;
+
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 8px;
+  }
+
+  &__link {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__mark {
+    position: relative;
+    z-index: 10;
+
+    margin-left: auto;
+  }
+
+  &__fill {
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+
+    background: #DDE8FF;
+    border-radius: 3px;
+  }
+}
+
+/*****--------------------rate-list-----------------*****/
+
+/*****--------------------choise-----------------*****/
+.choise {
+  list-style-type: none;
+
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  display: inline-flex;
+  border-bottom: 1px solid #D1DBE3;
+  margin-bottom: 48px;
+
+  &__item {
+    cursor: pointer;
+    margin-right: 30px;
+    padding-bottom: 16px;
+    width: 165px;
+    margin-bottom: -1px;
+
+    &--active {
+      border-bottom: 2px solid $blue;
+    }
+  }
+}
+
+.choise-option {
+  &__item {
+    list-style-type: none;
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 40px;
+
+  }
+}
+
+.choise-packet {
+
+  &__inner {}
+
+  &__card {
+    border: 1px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 24px;
+
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__column {
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    width: 140px;
+    height: 140px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $link-grey;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item {}
+
+  &__list-title {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $link-grey;
+    margin-bottom: 7px;
+  }
+
+  &__info {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__price {
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 20px;
+  }
+
+  &__discount {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+     
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $blue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      background: url(../img/icons/blue-discount.svg) no-repeat center center;
+    }
+  }
+
+  &__gift {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $blue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      background: url(../img/icons/red-gift.svg) no-repeat center center;
+    }
+  }
+
+  &__button {
+    display: block;
+    min-width: 220px;
+  }
+}
+
+/*****--------------------reviews-----------------*****/
+.choise-review {
+  display: none;
+  &__inner {}
+
+  &__card {
+    border: 1px solid #D1DBE3;
+    border-left: 0;
+    border-right: 0;
+
+    padding: 32px 0;
+    margin-bottom: -1px;
+  }
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display: inline-block;
+    margin-bottom: 8px;
+
+  }
+
+  &__city {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #90A2B0;
+    margin-bottom: 24px;
+  }
+
+  &__verified {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $blue;
+    margin-left: 10px;
+
+    display: inline-flex;
+    align-items: baseline;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: 4px;
+      margin-right: 3px;
+
+      width: 24px;
+      height: 24px;
+      background: url(../img/icons/blue-check-filled.svg);
+    }
+  }
+
+  &__mark {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 32px;
+
+  }
+
+  &__button {
+    margin-right: 16px;
+    font-family: Gilroy;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding: 8px 15px;
+
+  }
+
+  &__mini-title {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $link-grey;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__info-line {
+    display: flex;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  &__date {
+    margin-right: 24px;
+  }
+
+  &__question {
+    margin-right: 24px;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+  }
+
+  &__up {
+    cursor: pointer;
+    margin-right: 16px;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icons/black-up.svg);
+      margin-right: 4px;
+    }
+  }
+
+  &__down {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icons/black-down.svg);
+      margin-right: 4px;
+    }
+  }
+
+  &__group {
+    margin-top: 60px;
+
+    button {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+/*****--------------------reviews-----------------*****/
+
+.choise-service {
+  display: none;
+  &__card {
+    background: linear-gradient(0deg, #FBFCF4, #FBFCF4);
+    border-radius: 30px;
+    padding: 40px 160px 55px;
+
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__logo {
+    width: 26px;
+    height: 26px;
+
+    position: absolute;
+    left: 120px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: content;
+    }
+  }
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 32px;
+
+    p {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__button {
+    width: 225px;
+  }
+}
+
+/*****--------------------services-----------------*****/
+
+/*****--------------------choise-----------------*****/

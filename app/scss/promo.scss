@@ -1,0 +1,169 @@
+/*****--------------------promo-----------------*****/
+.promo {
+  background: #DDE8FF;
+  border-radius: 30px;
+
+  padding: 24px 200px 24px 100px;
+  display: flex;
+  align-items: center;
+
+  background-color: #DDE8FF;
+  background-image: url(../img/promo-pattern.png);
+  margin-bottom: 56px;
+
+  &__img {}
+
+  &__content {}
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 20px;
+
+    span {
+      color: $blue;
+    }
+  }
+
+  &__text {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+}
+
+/*****--------------------promo-----------------*****/
+
+/*****--------------------promo-card-----------------*****/
+.promo-cards {
+  &__item {
+    border: 1px solid #D1DBE3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 24px;
+
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__columns {
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__logo {}
+
+  &__title {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $link-grey;
+    margin-bottom: 24px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__grid-item {}
+
+  &__grid-title {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $link-grey;
+  }
+
+  &__grid-info {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__price {
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 16px;
+  }
+
+  &__discount {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: $blue;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url(../img/icons/blue-discount.svg) no-repeat center center;
+    }
+  }
+
+  &__button {
+    width: 220px;
+    margin-top: 32px;
+  }
+}
+
+/*****--------------------promo-card-----------------*****/

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Main</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <div class="header__contact header__contact--right">
+        <a href="+7 (861) 205-01-31" class="header__tel">+7 (861) 205-01-31</a>
+        <div class="header__loc">Петропавловск-Камчатский</div>
+      </div>
+      <div class="header__login">
+        <a href="orders.html" class="header__login-link">Заказы</a>
+        <a href="" class="header__login-link">Вход/Регистрация</a>
+      </div>
+      <div class="header__group">
+        <div class="header__filter"></div>
+        <div class="header__burger header__burger--main">
+          <div class="burger-menu">
+            <li class="burger-menu__item">
+              <a href="main-services.html" class="burger-menu__link">Пакеты охранных услуг</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="equipments.html" class="burger-menu__link">Комплекты оборудования</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="security-companies.html" class="burger-menu__link">Рейтинг охранных компаний</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="promotion.html" class="burger-menu__link">VINкомбо</a>
+            </li>
+<!--             <li class="burger-menu__item">
+              <a href="" class="burger-menu__link">Лучшие предложения</a>
+            </li> -->
+            <li class="burger-menu__item">
+              <a href="index.html" class="burger-menu__link">О нас</a>
+            </li>
+            <li class="burger-menu__item burger-menu__item--line"></li>
+            <li class="burger-menu__item">
+              <a href="profile-info.html" class="burger-menu__link">Личный кабинет</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="orders.html" class="burger-menu__link">Заказы</a>
+            </li>
+            <li class="burger-menu__item burger-menu__item--line"></li>
+            <li class="burger-menu__item">
+              <a href="" class="burger-menu__link burger-menu__link--phone">8 800 056 56 56</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="filter">
+  <div class="container">
+    <div class="filter__inner">
+      <div class="relative" id="trigger-main-menu">
+        <div class="filter__menu button button--blue button--burger">меню</div>
+        <ul class="main-menu">
+          <li class="main-menu__item"><a href="main-services.html" class="main-menu__link">Пакеты охранных услуг</a></li>
+          <li class="main-menu__item"><a href="equipments.html" class="main-menu__link">Комплекты оборудования</a></li>
+          <li class="main-menu__item"><a href="security-companies.html" class="main-menu__link">Выбор охранной компании</a></li>
+          <li class="main-menu__item"><a href="promotion.html" class="main-menu__link">vincКОМБО</a></li>
+          <li class="main-menu__item"><a href="index.html" class="main-menu__link">О компании</a></li>
+        </ul>
+      </div>
+      <form action="" class="filter__form">
+        <div class="filter__type">
+          <span class="filter__block-title">Я хочу охранять</span>
+          <select class="select" name="type">
+            <option disabled>Выбрать</option>
+            <option value="Коммерческая недвижимость">Коммерческая недвижимость</option>
+            <option value="Коммерческая недвижимость">недвижимость</option>
+            <option value="Коммерческая недвижимость">Коммерческая</option>
+          </select>
+        </div>
+        <div class="filter__location">
+          <span class="filter__block-title">где</span>
+          <select class="select" name="type">
+            <option disabled>Выбрать</option>
+            <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
+            <option value="Петропавловск-Камчатский">Камчатский</option>
+            <option value="Петропавловск-Камчатский">Петропавловск</option>
+          </select></div>
+        <div class="filter__button button button--blue button--arrow">показать</div>
+    </div>
+  </div>
+  </form>
+</div>
+  <main class="main">
+    <div class="container">
+      <!--                         slider-services                         -->
+      <ul class="slider-services">
+        <li class="slider-services__item">
+          <div class="slider-services__inner">
+            <div class="slider-services__content">
+              <h3 class="slider-services__title">Готовые решения <br>для охраны</h3>
+              <div class="slider-services__text">Не надо думать, как выбрать оборудование и охранную
+                компанию — мы подумали за тебя. Выбирай готовые
+                решения на Vincko:</div>
+              <a href="" class="slider-services__button button button--blue">подробнее</a>
+            </div>
+            <div class="slider-services__img"><img src="img/sliders/slider-services.png" alt=""></div>
+          </div>
+        </li>
+        <li class="slider-services__item">
+          <div class="slider-services__inner">
+            <div class="slider-services__content">
+              <h3 class="slider-services__title">Готовые решения <br>для охраны</h3>
+              <div class="slider-services__text">Не надо думать, как выбрать оборудование и охранную
+                компанию — мы подумали за тебя. Выбирай готовые
+                решения на Vincko:</div>
+              <a href="" class="slider-services__button button button--blue">подробнее</a>
+            </div>
+            <div class="slider-services__img"><img src="img/sliders/slider-services.png" alt=""></div>
+          </div>
+        </li>
+        <li class="slider-services__item">
+          <div class="slider-services__inner">
+            <div class="slider-services__content">
+              <h3 class="slider-services__title">Готовые решения <br>для охраны</h3>
+              <div class="slider-services__text">Не надо думать, как выбрать оборудование и охранную
+                компанию — мы подумали за тебя. Выбирай готовые
+                решения на Vincko:</div>
+              <a href="" class="slider-services__button button button--blue">подробнее</a>
+            </div>
+            <div class="slider-services__img"><img src="img/sliders/slider-services.png" alt=""></div>
+          </div>
+        </li>
+        <li class="slider-services__item">
+          <div class="slider-services__inner">
+            <div class="slider-services__content">
+              <h3 class="slider-services__title">Готовые решения <br>для охраны</h3>
+              <div class="slider-services__text">Не надо думать, как выбрать оборудование и охранную
+                компанию — мы подумали за тебя. Выбирай готовые
+                решения на Vincko:</div>
+              <a href="" class="slider-services__button button button--blue">подробнее</a>
+            </div>
+            <div class="slider-services__img"><img src="img/sliders/slider-services.png" alt=""></div>
+          </div>
+        </li>
+        <li class="slider-services__item">
+          <div class="slider-services__inner">
+            <div class="slider-services__content">
+              <h3 class="slider-services__title">Готовые решения <br>для охраны</h3>
+              <div class="slider-services__text">Не надо думать, как выбрать оборудование и охранную
+                компанию — мы подумали за тебя. Выбирай готовые
+                решения на Vincko:</div>
+              <a href="" class="slider-services__button button button--blue">подробнее</a>
+            </div>
+            <div class="slider-services__img"><img src="img/sliders/slider-services.png" alt=""></div>
+          </div>
+        </li>
+        <li class="slider-services__item">
+          <div class="slider-services__inner">
+            <div class="slider-services__content">
+              <h3 class="slider-services__title">Готовые решения <br>для охраны</h3>
+              <div class="slider-services__text">Не надо думать, как выбрать оборудование и охранную
+                компанию — мы подумали за тебя. Выбирай готовые
+                решения на Vincko:</div>
+              <a href="" class="slider-services__button button button--blue">подробнее</a>
+            </div>
+            <div class="slider-services__img"><img src="img/sliders/slider-services.png" alt=""></div>
+          </div>
+        </li>
+      </ul>
+      <!--                         slider-services                         -->
+      <!--                         grid-box                         -->
+      <div class="grid-box">
+        <div class="grid-box__item grid-item grid-item--blue">
+          <h3 class="grid-item__title grid-item__title--small">Рейтинг охранных предприятий:</h3>
+          <div class="grid-item__inner">
+            <div class="grid-item__img grid-item__img--bottom grid-item__img--mobile">
+              <img src="img/rating.png" alt="">
+            </div>
+            <ol class="grid-item__list rating-list">
+              <li class="rating-list__item">
+                <a class="rating-list__link" href="">Группа компаний, осуществляю...</a>
+                <span class="rating-list__span" style="width: 100%">5.0</span>
+              </li>
+              <li class="rating-list__item">
+                <a class="rating-list__link" href="">ООО «ЧОП «ЗУБР»</a>
+                <span class="rating-list__span" style="width: 80%">4.0</span>
+              </li>
+              <li class="rating-list__item">
+                <a class="rating-list__link" href="">ООО «ЧОП «ЗУБР»</a>
+                <span class="rating-list__span" style="width: 60%">3.0</span>
+              </li>
+              <li class="rating-list__item">
+                <a class="rating-list__link" href="">ООО «ЧОП «ЗУБР»</a>
+                <span class="rating-list__span" style="width: 40%">2.0</span>
+              </li>
+              <li class="rating-list__item">
+                <a class="rating-list__link" href="">ООО «ЧОП «ЗУБР»</a>
+                <span class="rating-list__span" style="width: 20%">1.0</span>
+              </li>
+            </ol>
+            <div class="grid-item__content">
+              <div class="grid-item__text">Оцените работу охранных предприятий вашего города</div>
+              <div class="grid-item__group">
+                <a href="" class="grid-item__button button button--blue">оценить </a>
+                <a href="" class="grid-item__button button button--grey">весь рейтинг</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-box__item grid-box__item--big grid-item  grid-item--red-pattern  grid-item--center">
+          <h3 class="grid-item__title">vincКОМБО</h3>
+          <div class="grid-item__text grid-item__text--bold ">Обеспечиваем охрану квартир, домов
+            и загородной недвижимости. Сотрудничаем с надежными охранными компаниями по всей стране.</div>
+          <a href="" class="grid-item__button button button--grey">подробнее</a>
+          <div class="grid-item__img">
+            <img src="img/puzzel.png" alt="">
+          </div>
+        </div>
+        <div class="grid-box__item grid-item grid-item--yellow">
+          <h3 class="grid-item__title">Комплекты <br> оборудования</h3>
+          <a href="" class="grid-item__button button button--grey">подробнее</a>
+          <div class="grid-item__img grid-item__img--bottom">
+            <img src="img/equipment.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!--                         grid-box                         -->
+      <!--                         packet-services                         -->
+      <div class="packet-services">
+        <h2 class="packet-services__main-title">Хиты продаж</h2>
+        <div class="packet-services__item">
+          <h3 class="packet-services__title">Спокойствие</h3>
+            <div class="packet-services__img">
+              <img src="img/packet.png" alt="">
+            </div>
+          <div class="packet-services__inner">
+            <div class="packet-services__column">
+              <ul class="packet-services__list">
+                <li class="packet-services__list-item">
+                  <h4 class="packet-services__mini-title">Поддерживается оборудование:</h4>
+                  <div class="packet-services__description">13 комплектов</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <h4 class="packet-services__mini-title">Абонплата:</h4>
+                  <div class="packet-services__description">Есть</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <h4 class="packet-services__mini-title">Страховка:</h4>
+                  <div class="packet-services__description">
+                    <p>12 мес - 1500 руб.</p>
+                    <p>12 мес - 1500 руб.</p>
+                    <p>12 мес - 1500 руб.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="packet-services__column">
+              <ul class="packet-services__list">
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/unlock-black.svg" alt=""></div>
+                  <div class="packet-services__description">Обнаружение проникновения</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/fire-black.svg" alt=""></div>
+                  <div class="packet-services__description">Определение утечки газа и возгорания</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/humidity-black.svg" alt=""></div>
+                  <div class="packet-services__description">Предупреждение о протечке труб и возможность перекрытия</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/mobile-black.svg" alt=""></div>
+                  <div class="packet-services__description">Удаленное управление бытовыми приборами, кранами и воротами через мобильное приложение</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/camera-black.svg" alt=""></div>
+                  <div class="packet-services__description">Отправка серии фотографий владельцу в случае тревоги</div>
+                </li>
+              </ul>
+            </div>
+            <div class="packet-services__column">
+              <div class="packet-services__price">от 13 630 ₽</div>
+              <ul class="packet-services__list">
+                <li class="packet-services__list-item">
+                  <div class="packet-services__discount">скидка 10% при покупке абонплаты</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <div class="packet-services__discount packet-services__discount--red">скидка 10% при покупке абонплаты</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <div class="packet-services__discount">скидка 10% при покупке абонплаты</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <div class="packet-services__discount packet-services__discount--red">скидка 10% при покупке абонплаты</div>
+                </li>
+              </ul>
+              <a href="" class="packet-services__button button button--blue">подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="packet-services__item">
+          <div class="packet-services__promo">-10% до 23.02</div>
+          <h3 class="packet-services__title">Умный дом</h3>
+            <div class="packet-services__img">
+              <img src="img/packet.png" alt="">
+            </div>
+          <div class="packet-services__inner">
+            <div class="packet-services__column">
+              <ul class="packet-services__list">
+                <li class="packet-services__list-item">
+                  <h4 class="packet-services__mini-title">Поддерживается оборудование:</h4>
+                  <div class="packet-services__description">13 комплектов</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <h4 class="packet-services__mini-title">Абонплата:</h4>
+                  <div class="packet-services__description">Есть</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <h4 class="packet-services__mini-title">Страховка:</h4>
+                  <div class="packet-services__description">
+                    <p>12 мес - 1500 руб.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="packet-services__column">
+              <ul class="packet-services__list">
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/unlock-black.svg" alt=""></div>
+                  <div class="packet-services__description">Обнаружение проникновения</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/fire-black.svg" alt=""></div>
+                  <div class="packet-services__description">Определение утечки газа и возгорания</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/humidity-black.svg" alt=""></div>
+                  <div class="packet-services__description">Предупреждение о протечке труб и возможность перекрытия</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/mobile-black.svg" alt=""></div>
+                  <div class="packet-services__description">Удаленное управление бытовыми приборами, кранами и воротами через мобильное приложение</div>
+                </li>
+                <li class="packet-services__list-item packet-services__list-item--flex">
+                  <div class="packet-services__logo"><img src="img/icons/camera-black.svg" alt=""></div>
+                  <div class="packet-services__description">Отправка серии фотографий владельцу в случае тревоги</div>
+                </li>
+              </ul>
+            </div>
+            <div class="packet-services__column">
+              <div class="packet-services__price">от 47 630 ₽</div>
+              <ul class="packet-services__list">
+                <li class="packet-services__list-item">
+                  <div class="packet-services__discount">скидка 10% при покупке абонплаты</div>
+                </li>
+                <li class="packet-services__list-item">
+                  <div class="packet-services__discount packet-services__discount--red">скидка 10% при покупке абонплаты</div>
+                </li>
+              </ul>
+              <a href="" class="packet-services__button button button--blue">подробнее</a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="packet-services__button button button--white button--long">ПОКАЗАТЬ ВСЕ</a>
+      </div>
+      <!--                         packet-services                         -->
+      <!--                         block-info                         -->
+      <div class="block-info block-info--blue">
+        <h3 class="block-info__title">Подписка «Бесплатная замена <br>оборудования» </h3>
+        <div class="block-info__text">Всего 49 руб./мес. и в случае поломки, вы получаете бесплатно любой вышедший из строя датчик</div>
+        <a href="" class="block-info__button button button--grey">подробнее</a>
+      </div>
+      <!--                         block-info                         -->
+    </div>
+    <!--                         rating-description                         -->
+    <div class="rating-description">
+      <div class="container">
+        <h3 class="rating-description__main-title">Из чего складывается рейтинг охранных компаний?</h3>
+        <div class="rating-description__inner">
+          <div class="rating-description__block">
+            <div class="rating-description__img">
+              <img src="img/jelly-lock.png" alt="">
+            </div>
+            <h3 class="rating-description__title">Финансовая надежность</h3>
+            <div class="rating-description__text">Выплаты по возникшему ущербу, выплаты зарплаты сотрудникам, финансовые показатели компании</div>
+          </div>
+          <div class="rating-description__block">
+            <div class="rating-description__img">
+              <img src="img/jelly-shield.png" alt="">
+            </div>
+            <h3 class="rating-description__title">Забота о клиенте</h3>
+            <div class="rating-description__text">Внимательность, скорость реагирования на обращения клиентов, удобство взаимодействия с ЧОП, вежливость сотрудников и качество отработки жалоб</div>
+          </div>
+          <div class="rating-description__block">
+            <div class="rating-description__img">
+              <img src="img/jelly-tunder.png" alt="">
+            </div>
+            <h3 class="rating-description__title">Скорость спасения</h3>
+            <div class="rating-description__text">Внимательность, скорость реагирования на обращения клиентов, удобство взаимодействия с ЧОП, вежливость сотрудников и качество отработки жалоб</div>
+          </div>
+          <div class="rating-description__block">
+            <div class="rating-description__img">
+              <img src="img/jelly-check.png" alt="">
+            </div>
+            <h3 class="rating-description__title">Честный договор</h3>
+            <div class="rating-description__text">Ясность и прозрачность договора, отсутствие скрытых сборов, штрафов, фиксация обязанностей ЧОП и стоимости услуг</div>
+          </div>
+          <div class="rating-description__block">
+            <div class="rating-description__img">
+              <img src="img/jelly-mobile.png" alt="">
+            </div>
+            <h3 class="rating-description__title">Онлайн сервисы</h3>
+            <div class="rating-description__text">Наличие онлайн сервисов позволяющих работать оперативнее и облегчить жизнь клиенту: мобильное приложение, оплата онлайн, личный кабинет</div>
+          </div>
+          <div class="rating-description__block">
+            <div class="rating-description__img">
+              <img src="img/jelly-hand.png" alt="">
+            </div>
+            <h3 class="rating-description__title">Рекомендации сотрудников</h3>
+            <div class="rating-description__text">Как сотрудники компании оценивают ее как партнера, работодателя и рекомендуют ли в нее обращаться</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                         rating-description                         -->
+    <div class="container">
+      <!--                         block-info                         -->
+      <div class="block-info block-info--yellow">
+        <h3 class="block-info__title">Попробуй любой комплект <br> бесплатно!</h3>
+        <div class="block-info__text">Гарантия возврата денег в течении 14 дней тест-драйва!</div>
+        <a href="" class="block-info__button button button--grey">список комплектов</a>
+      </div>
+      <!--                         block-info                         -->
+    </div>
+    <!--                         discover                         -->
+    <div class="discover">
+      <div class="container">
+        <h3 class="discover__title">Полезно знать</h3>
+        <div class="discover__slider">
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks1.png" alt=""></a>
+          </div>
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks2.png" alt=""></a>
+          </div>
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks3.png" alt=""></a>
+          </div>
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks4.png" alt=""></a>
+          </div>
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks5.png" alt=""></a>
+          </div>
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks6.png" alt=""></a>
+          </div>
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks7.png" alt=""></a>
+          </div>
+          <div class="discover__slider-item">
+            <a href=""><img src="img/ks8.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                         discover                         -->
+    <div class="container">
+      <!--                         smart-house                         -->
+      <div class="smart-house">
+        <div class="smart-house__top">
+          <div class="smart-house__content">
+            <h3 class="smart-house__title">Умный дом доступен <br> каждому</h3>
+            <div class="smart-house__text">Обеспечиваем охрану квартир, домов
+              и загородной недвижимости. Сотрудничаем с надежными охранными компаниями по всей стране.</div>
+          </div>
+          <div class="smart-house__img"><img src="img/smart-house.png" alt=""></div>
+        </div>
+        <div class="smart-house__bottom">
+          <div class="smart-house__column">
+            <div class="smart-house__logo">
+              <img src="img/shild-round.svg" alt="">
+            </div>
+            <div class="smart-house__info">Позволяет обезопасить себя от неприятных последствий затопления дома или соседей, утечки газа или пожара.</div>
+          </div>
+          <div class="smart-house__column">
+            <div class="smart-house__logo">
+              <img src="img/remote-round.svg" alt="">
+            </div>
+            <div class="smart-house__info">Предоставляет возможность удаленного управления бытовыми приборами в доме.</div>
+          </div>
+          <div class="smart-house__column">
+            <div class="smart-house__logo">
+              <img src="img/lock-round.svg" alt=""></div>
+            <div class="smart-house__info">Обеспечивает защищенность дома от несанкционированного проникновения.</div>
+          </div>
+          <div class="smart-house__column">
+            <div class="smart-house__logo">
+              <img src="img/phone-round.svg" alt="">
+            </div>
+            <div class="smart-house__info">Удобное управление безопасностью и комфортом в понятном и удобном приложении на смартфоне.</div>
+          </div>
+        </div>
+      </div>
+      <!--                         smart-house                         -->
+      <!--                         equipment                         -->
+      <div class="equipment">
+        <h3 class="equipment__title">Производители оборудования</h3>
+        <div class="equipment__inner">
+          <a href="" class="equipment__logo"><img src="img/company1.png" alt=""></a>
+          <a href="" class="equipment__logo"><img src="img/company2.png" alt=""></a>
+          <a href="" class="equipment__logo"><img src="img/company3.png" alt=""></a>
+        </div>
+      </div>
+      <!--                         equipment                         -->
+      <!--                         questions                         -->
+<div class="questions">
+  <h3 class="questions__title">Остались вопросы?</h3>
+  <h4 class="questions__subtitle">Закажите обратный звонок от нашего <br> менеджера</h4>
+  <div class="questions__form">
+    <input type="text" class="questions__input" placeholder="Телефон">
+    <a href="" class="questions__button button button--blue">отправить</a>
+  </div>
+</div>
+<!--                         questions                         -->
+    </div>
+  </main>
+  <!--                         contact                         -->
+<div class="container">
+  <div class="contact">
+    <div class="contact__links">
+      <div class="contact__links-title">
+        <img src="img/vincko-contact.png" alt="">
+      </div>
+      <div class="contact__list-wrapper">
+        <div class="contact__list">
+          <a href="main-services.html" class="contact__list-link">Пакеты охранных услуг</a>
+          <a href="security-companies.html" class="contact__list-link">Рейтинг охранных компаний</a>
+          <a href="equipments.html" class="contact__list-link">Комплекты оборудования</a>
+          <a href="promotion.html" class="contact__list-link">Хиты продаж</a>
+        </div>
+        <div class="contact__list">
+          <a href="index.html" class="contact__list-link">О компании vincko</a>
+          <a href="" class="contact__list-link">Политика конфиденциальности</a>
+          <a href="" class="contact__list-link">Пользовательское соглашение</a>
+          <a href="" class="contact__list-link">Публичная оферта</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact__parteners">
+      <h3 class="contact__parteners-title">Служба заботы о клиентах</h3>
+      <a href="tel:8 800 000 00 00" class="contact__parteners-phone">8 800 000 00 00</a>
+      <div class="contact__button button button--blue button--long">отзыв об охранной компании</div>
+      <div class="contact__button button button--blue">заявка на партнерство</div>
+      <div class="contact__parteners-info">Для охранных и монтажных компаний, производителей оборудования и других юридических лиц</div>
+    </div>
+  </div>
+</div>
+<!--                         contact                         -->
+  <!--                         footer                         -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__copyright">2021 Vincko. Все права защищены.</div>
+      <a href="" class="footer__link">сделано в <span>Филдс</span></a>
+    </div>
+  </div>
+</footer>
+<!--                         footer                         -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

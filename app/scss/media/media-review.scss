@@ -1,0 +1,229 @@
+/*****--------------------organisation-----------------*****/
+@media only screen and (max-width: 640px) {
+  .organisation {
+    flex-direction: column;
+
+    &__block {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 4vw;
+      line-height: 4.5vw;
+    }
+
+    &__subtitle {
+      font-size: 3vw;
+      line-height: 3.5vw;
+    }
+
+    &__link {}
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .organisation {
+    &__block {
+      min-height: 75px;
+    }
+
+    &__title {
+      font-family: Gilroy;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+
+    &__subtitle {
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+
+}
+
+/*****--------------------organisation-----------------*****/
+
+
+/*****--------------------review-----------------*****/
+@media only screen and (max-width: 786px) {
+	.review {
+	&__main-title {
+	}
+	&__group {
+	}
+	&__block {
+		&--info {
+		}
+	}
+	&__list {
+	}
+	&__item {
+		margin-bottom: 30px;
+	}
+	&__title {
+		margin-bottom: 16px;
+	}
+	&__title-info {
+	}
+	&__hint {
+	}
+	&__wrapper {
+	}
+	&__marks {
+		margin-right: 20px;
+	}
+	&__checkbox-label {
+	}
+	&__checkbox {
+	}
+	&__checkbox-fake {
+	}
+}
+.marks {
+	&__item {
+	}
+}
+
+}
+@media only screen and (max-width: 640px) {
+	.review {
+	&__main-title {
+	}
+	&__group {
+		margin-bottom: 20px;
+	}
+	&__block {
+		&--info {
+		}
+	}
+	&__list {
+		margin-bottom: 50px;
+	}
+	&__item {
+		margin-bottom: 20px;
+	}
+	&__title {
+		margin-bottom: 10px;
+	}
+	&__title-info {
+	}
+	&__hint {
+	}
+	&__wrapper {
+		flex-direction: column;
+	}
+	&__marks {
+		margin-right: 0;
+	}
+	&__checkbox-label {
+		margin-top: 10px;
+	}
+	&__checkbox {
+	}
+	&__checkbox-fake {
+	}
+}
+.marks {
+	justify-content: space-between;
+	&__item {
+		margin-right: 0;
+	}
+}
+}
+@media only screen and (max-width: 480px) {
+		.review {
+	&__main-title {
+	}
+	&__group {
+	}
+	&__block {
+		padding: 10px;
+		&--info {
+			padding-left: 50px;
+		}
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+	&__item {
+	}
+	&__title {
+	}
+	&__title-info {
+	}
+	&__hint {
+	}
+	&__wrapper {
+	}
+	&__marks {
+	}
+	&__checkbox-label {
+	}
+	&__checkbox {
+	}
+	&__checkbox-fake {
+	}
+}
+.marks {
+	flex-wrap: wrap;
+	justify-content: start;
+	&__item {
+		margin-right: 16px;
+		margin-bottom: 5px;
+	}
+}
+
+}
+/*****--------------------review-----------------*****/
+
+/*****--------------------comment-----------------*****/
+@media only screen and (max-width: 1024px) {
+	.comment {
+		width: auto;
+		margin-bottom: 50px;
+	&__title {
+	}
+	&__info {
+	}
+	&__textarea {
+	}
+	&__button {
+	}
+}
+}
+@media only screen and (max-width: 640px) {
+	.comment {
+		width: auto;
+		margin-bottom: 30px;
+	&__title {
+	}
+	&__info {
+	}
+	&__textarea {
+		padding: 10px;
+		margin-bottom: 16px;
+		height: 150px;
+	}
+	&__button {
+	}
+}}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 320px) {}
+/*****--------------------comment-----------------*****/

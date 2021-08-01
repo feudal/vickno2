@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Equipment card</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <div class="header__contact header__contact--right">
+        <a href="+7 (861) 205-01-31" class="header__tel">+7 (861) 205-01-31</a>
+        <div class="header__loc">Петропавловск-Камчатский</div>
+      </div>
+      <div class="header__login">
+        <a href="orders.html" class="header__login-link">Заказы</a>
+        <a href="" class="header__login-link">Вход/Регистрация</a>
+      </div>
+      <div class="header__group">
+        <div class="header__filter"></div>
+        <div class="header__burger header__burger--main">
+          <div class="burger-menu">
+            <li class="burger-menu__item">
+              <a href="main-services.html" class="burger-menu__link">Пакеты охранных услуг</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="equipments.html" class="burger-menu__link">Комплекты оборудования</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="security-companies.html" class="burger-menu__link">Рейтинг охранных компаний</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="promotion.html" class="burger-menu__link">VINкомбо</a>
+            </li>
+<!--             <li class="burger-menu__item">
+              <a href="" class="burger-menu__link">Лучшие предложения</a>
+            </li> -->
+            <li class="burger-menu__item">
+              <a href="index.html" class="burger-menu__link">О нас</a>
+            </li>
+            <li class="burger-menu__item burger-menu__item--line"></li>
+            <li class="burger-menu__item">
+              <a href="profile-info.html" class="burger-menu__link">Личный кабинет</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="orders.html" class="burger-menu__link">Заказы</a>
+            </li>
+            <li class="burger-menu__item burger-menu__item--line"></li>
+            <li class="burger-menu__item">
+              <a href="" class="burger-menu__link burger-menu__link--phone">8 800 056 56 56</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="filter">
+  <div class="container">
+    <div class="filter__inner">
+      <div class="relative" id="trigger-main-menu">
+        <div class="filter__menu button button--blue button--burger">меню</div>
+        <ul class="main-menu">
+          <li class="main-menu__item"><a href="main-services.html" class="main-menu__link">Пакеты охранных услуг</a></li>
+          <li class="main-menu__item"><a href="equipments.html" class="main-menu__link">Комплекты оборудования</a></li>
+          <li class="main-menu__item"><a href="security-companies.html" class="main-menu__link">Выбор охранной компании</a></li>
+          <li class="main-menu__item"><a href="promotion.html" class="main-menu__link">vincКОМБО</a></li>
+          <li class="main-menu__item"><a href="index.html" class="main-menu__link">О компании</a></li>
+        </ul>
+      </div>
+      <form action="" class="filter__form">
+        <div class="filter__type">
+          <span class="filter__block-title">Я хочу охранять</span>
+          <select class="select" name="type">
+            <option disabled>Выбрать</option>
+            <option value="Коммерческая недвижимость">Коммерческая недвижимость</option>
+            <option value="Коммерческая недвижимость">недвижимость</option>
+            <option value="Коммерческая недвижимость">Коммерческая</option>
+          </select>
+        </div>
+        <div class="filter__location">
+          <span class="filter__block-title">где</span>
+          <select class="select" name="type">
+            <option disabled>Выбрать</option>
+            <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
+            <option value="Петропавловск-Камчатский">Камчатский</option>
+            <option value="Петропавловск-Камчатский">Петропавловск</option>
+          </select></div>
+        <div class="filter__button button button--blue button--arrow">показать</div>
+    </div>
+  </div>
+  </form>
+</div>
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+        <a href="equipments.html" class="breadcrumbs__link">Оборудование</a>
+        <a href="" class="breadcrumbs__link">AJAX StarterKit Cam</a>
+      </div>
+      <!--                         breadcrumbs                         -->
+      <!--                         big-equipment                         -->
+      <div class="big-equipment">
+        <div class="big-equipment__inner">
+          <div class="big-equipment__column">
+            <div class="big-equipment__img"><img src="img/big-equipment.png" alt=""></div>
+          </div>
+          <div class="big-equipment__column">
+            <h2 class="big-equipment__title">AJAX StarterKit Cam</h2>
+            <h3 class="big-equipment__subtitle">Стартовый комплект системы безопасности с <br>фотоверификацией тревог.</h3>
+            <div class="big-equipment__brend">
+              Бренд:
+              <span>AJAX</span>
+            </div>
+            <div class="big-equipment__text">
+              <p>Комплект беспроводной системы безопасности StarterKit Cam убережет от ограбления. Ajax моментально сообщит вам и охранной компании о взломе двери и менее чем за 9 секунд пришлет фотографию с места события.</p>
+              <p>
+                Ajax StarterKit Cam управляется со смартфона из любой точки мира. Даже если в доме отключат электричество и интернет, хаб продолжит защищать ваше имущество.</p>
+            </div>
+          </div>
+          <div class="big-equipment__column">
+            <div class="big-equipment__box">
+              <h3 class="big-equipment__subtitle">Цена</h3>
+              <div class="big-equipment__price">19 850 р.</div>
+              <a href="" class="big-equipment__button button button--long button--blue">выбрать пакеты услуг</a>
+            </div>
+          </div>
+        </div>
+        <div class="big-equipment__grid">
+          <div class="big-equipment__grid-item">
+            <div class="big-equipment__icon">
+              <img src="img/icons/blue-phone.svg" alt="">
+            </div>
+            <div class="big-equipment__grid-text">Автоматизирует безопасность сценариями</div>
+          </div>
+          <div class="big-equipment__grid-item">
+            <div class="big-equipment__icon">
+              <img src="img/icons/blue-signal.svg" alt="">
+            </div>
+            <div class="big-equipment__grid-text">Подключается к пульту охранной компании</div>
+          </div>
+          <div class="big-equipment__grid-item">
+            <div class="big-equipment__icon">
+              <img src="img/icons/blue-phone.svg" alt="">
+            </div>
+            <div class="big-equipment__grid-text">Автоматизирует безопасность сценариями</div>
+          </div>
+          <div class="big-equipment__grid-item">
+            <div class="big-equipment__icon">
+              <img src="img/icons/blue-camera.svg" alt="">
+            </div>
+            <div class="big-equipment__grid-text">Присылает анимированную серию фотографий</div>
+          </div>
+          <div class="big-equipment__grid-item">
+            <div class="big-equipment__icon">
+              <img src="img/icons/blue-wifi.svg" alt="">
+            </div>
+            <div class="big-equipment__grid-text">Всегда онлайн благодаря трем каналам связи</div>
+          </div>
+          <div class="big-equipment__grid-item">
+            <div class="big-equipment__icon">
+              <img src="img/icons/blue-camera.svg" alt="">
+            </div>
+            <div class="big-equipment__grid-text">Присылает анимированную серию фотографий</div>
+          </div>
+        </div>
+      </div>
+      <!--                         big-equipment                         -->
+      <!--                         complectation                         -->
+      <h2 class="main-title">Комплектация</h2>
+      <div class="complectation">
+        <div class="complectation__card">
+          <div class="complectation__img">
+            <img src="img/complectation1.png" alt="">
+          </div>
+          <div class="complectation__content">
+            <h3 class="complectation__title">Панель управления</h3>
+            <div class="complectation__text">Помогает защитить входную группу от вторжения через окна и двери</div>
+          </div>
+        </div>
+        <div class="complectation__card">
+          <div class="complectation__img">
+            <img src="img/complectation2.png" alt="">
+          </div>
+          <div class="complectation__content">
+            <h3 class="complectation__title">Датчик движения</h3>
+            <div class="complectation__text">Помогает защитить входную группу от вторжения через окна и двери</div>
+          </div>
+        </div>
+        <div class="complectation__card">
+          <div class="complectation__img">
+            <img src="img/complectation3.png" alt="">
+          </div>
+          <div class="complectation__content">
+            <h3 class="complectation__title">Брелок управления</h3>
+            <div class="complectation__text">Помогает защитить входную группу от вторжения через окна и двери</div>
+          </div>
+        </div>
+        <div class="complectation__card">
+          <div class="complectation__img">
+            <img src="img/complectation1.png" alt="">
+          </div>
+          <div class="complectation__content">
+            <h3 class="complectation__title">Датчик открытия двери</h3>
+            <div class="complectation__text">Помогает защитить входную группу от вторжения через окна и двери</div>
+          </div>
+        </div>
+      </div>
+      <!--                         complectation                         -->
+      <!--                         questions                         -->
+<div class="questions">
+  <h3 class="questions__title">Остались вопросы?</h3>
+  <h4 class="questions__subtitle">Закажите обратный звонок от нашего <br> менеджера</h4>
+  <div class="questions__form">
+    <input type="text" class="questions__input" placeholder="Телефон">
+    <a href="" class="questions__button button button--blue">отправить</a>
+  </div>
+</div>
+<!--                         questions                         -->
+    </div>
+  </main>
+  <!--                         contact                         -->
+<div class="container">
+  <div class="contact">
+    <div class="contact__links">
+      <div class="contact__links-title contact__links-title--line">
+        <img src="img/vincko-contact.png" alt="">
+      </div>
+      <div class="contact__list-wrapper">
+        <div class="contact__list">
+          <h3 class="contact__list-title">Клиентам</h3>
+          <a href="main-services.html" class="contact__list-link">Пакеты охранных услуг</a>
+          <a href="security-companies.html" class="contact__list-link">Рейтинг охранных компаний</a>
+          <a href="equipments.html" class="contact__list-link">Комплекты оборудования</a>
+          <a href="promotion.html" class="contact__list-link">Хиты продаж</a>
+        </div>
+        <div class="contact__list">
+          <h3 class="contact__list-title">О компании</h3>
+          <a href="" class="contact__list-link">Партнерам</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--                         contact                         -->
+  <!--                         footer                         -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__copyright">2021 Vincko. Все права защищены.</div>
+      <a href="" class="footer__link">сделано в <span>Филдс</span></a>
+    </div>
+  </div>
+</footer>
+<!--                         footer                         -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

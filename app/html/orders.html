@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>cabinet</title>
+</head>
+
+<body>
+  @@include('./components/header.html')
+  @@include('./components/filter.html')
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+        <a href="" class="breadcrumbs__link">Личный кабинет</a>
+        <a href="" class="breadcrumbs__link">Мои заказы</a>
+      </div>
+      <!--                         breadcrumbs                         -->
+      <h2 class="main-title">Здравствуйте, Александр</h2>
+      <!--                         cabinet                         -->
+      <div class="cabinet">
+        <ul class="cabinet__menu">
+          <li class="cabinet__menu-item">
+            <h3 class="cabinet__menu-title">Заказы и заявки</h3>
+          </li>
+          <li class="cabinet__menu-item"><a href="profile-info.html" class="cabinet__menu-link">Мои данные</a></li>
+          <li class="cabinet__menu-item"><a href="bonus.html" class="cabinet__menu-link">Бонусный счет</a></li>
+        </ul>
+        <aside class="cabinet__aside">
+          <ul class="cabinet__choise">
+            <li class="cabinet__choise-button cabinet__choise-button--active">Все заказы</li>
+            <li class="cabinet__choise-button">Индивидуальные заявки</li>
+            <li class="cabinet__choise-button">Новая заявка</li>
+          </ul>
+          <ul class="cabinet__list">
+            <li class="cabinet__list-item">
+              <div class="cabinet__column">
+                <div class="cabinet__number">Заказ №44236</div>
+                <div class="cabinet__info">
+                  <span class="cabinet__info--grey">Дата оформления:</span>
+                  <span>12 февраля 2021</span>
+                </div>
+                <div class="cabinet__info">
+                  <span class="cabinet__info--grey">Планируемая дата монтажа:</span>
+                  <span>28 марта 2021, 10:00 - 12:00</span>
+                </div>
+                <div class="cabinet__info">
+                  <span class="cabinet__info--grey">Дата получения:</span>
+                  <span>23 февраля 2021</span>
+                </div>
+                <div class="cabinet__services">
+                  <div class="cabinet__services-title">Пакет "Умный дом"</div>
+                  <div class="cabinet__services-info">AJAX StarterKit Cam</div>
+                  <div class="cabinet__services-info">ООО «ЧОП «ЗУБР» г. Краснодар</div>
+                  <div class="cabinet__services-info">Страховка Россгострах описание страховки</div>
+                </div>
+                <div class="cabinet__group">
+                  <a href="" class="cabinet__button button button--long button--white-black">подробнее о заказе</a>
+                  <a href="" class="cabinet__button button button--long button--blue">оплатить заказ</a>
+                </div>
+              </div>
+              <div class="cabinet__column">
+                <div class="cabinet__total">49 000р.</div>
+                <div class="cabinet__status">Принят в работу</div>
+              </div>
+            </li>
+            <li class="cabinet__list-item">
+              <div class="cabinet__column">
+                <div class="cabinet__number">Заказ №44236</div>
+                <div class="cabinet__info">
+                  <span class="cabinet__info--grey">Дата оформления:</span>
+                  <span>12 февраля 2021</span>
+                </div>
+                <div class="cabinet__info">
+                  <span class="cabinet__info--grey">Дата получения:</span>
+                  <span>23 февраля 2021</span>
+                </div>
+                <div class="cabinet__services">
+                  <div class="cabinet__services-title">Пакет "Умный дом"</div>
+                  <div class="cabinet__services-info">AJAX StarterKit Cam</div>
+                  <div class="cabinet__services-info">ООО «ЧОП «ЗУБР» г. Краснодар</div>
+                  <div class="cabinet__services-info">Страховка Россгострах описание страховки</div>
+                </div>
+                <div class="cabinet__group">
+                  <a href="" class="cabinet__button button button--long button--white-black">подробнее о заказе</a>
+                  <a href="" class="cabinet__button button button--long button--blue">оплатить заказ</a>
+                </div>
+              </div>
+              <div class="cabinet__column">
+                <div class="cabinet__total">49 000р.</div>
+                <div class="cabinet__status cabinet__status--green ">Принят в работу</div>
+              </div>
+            </li>
+            <li class="cabinet__list-item">
+              <div class="cabinet__column">
+                <div class="cabinet__number">Заказ №44236</div>
+                <div class="cabinet__info">
+                  <span class="cabinet__info--grey">Дата оформления:</span>
+                  <span>12 февраля 2021</span>
+                </div>
+                <div class="cabinet__info">
+                  <span class="cabinet__info--grey">Дата получения:</span>
+                  <span>23 февраля 2021</span>
+                </div>
+                <div class="cabinet__services">
+                  <div class="cabinet__services-title">Пакет "Умный дом"</div>
+                  <div class="cabinet__services-info">AJAX StarterKit Cam</div>
+                  <div class="cabinet__services-info">ООО «ЧОП «ЗУБР» г. Краснодар</div>
+                  <div class="cabinet__services-info">Страховка Россгострах описание страховки</div>
+                </div>
+                <div class="cabinet__group">
+                  <a href="" class="cabinet__button button button--long button--white-black">подробнее о заказе</a>
+                  <a href="" class="cabinet__button button button--long button--blue">оплатить заказ</a>
+                </div>
+              </div>
+              <div class="cabinet__column">
+                <div class="cabinet__total">49 000р.</div>
+                <div class="cabinet__status cabinet__status--green ">Принят в работу</div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!--                         cabinet                         -->
+      @@include('./components/question.html')
+    </div>
+  </main>
+  @@include('./components/contact-short.html')
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

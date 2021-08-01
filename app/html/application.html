@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Application</title>
+</head>
+
+<body>
+  @@include('./components/header.html')
+  @@include('./components/filter.html')
+  <main class="main">
+    <div class="container">
+      <!--                         breadcrumbs                         -->
+      <div class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+        <a href="main-services.html" class="breadcrumbs__link">Оформление заказа</a>
+      </div>
+      <!--                         breadcrumbs                         -->
+      <h2 class="main-title">Оформление заказа</h2>
+      <!--                         application                         -->
+      <ol class="application">
+        <li class="application__section">
+          <div class="application__top">
+            <h3 class="application__main-title">Состав заказа</h3>
+            <div class="application__change button button--white-black">изменить</div>
+          </div>
+          <ul class="application__list">
+            <li class="application__item">
+              <div class="application__left">
+                <h4 class="application__title">AJAX StarterKit Cam</h4>
+              </div>
+              <div class="application__right">
+                <div class="application__info">47 630 ₽</div>
+              </div>
+            </li>
+            <li class="application__item">
+              <div class="application__left">
+                <h4 class="application__title">Услуги ООО «ЧОП «ЗУБР» г. Краснодар</h4>
+                <a href="" class="application__link">Выбрать другой</a>
+              </div>
+              <div class="application__right">
+                <div class="application__info">По договору с организацией</div>
+              </div>
+            </li>
+            <li class="application__item">
+              <div class="application__left">
+                <h4 class="application__title">Страховка Россгострах описание страховки</h4>
+              </div>
+              <div class="application__right">
+                <div class="application__info">1000 ₽</div>
+              </div>
+            </li>
+            <li class="application__bottom">
+              <button class="application__button button button--blue">продолжить</button>
+            </li>
+          </ul>
+        </li>
+        <li class="application__section application__section--hidden">
+          <div class="application__top">
+            <h3 class="application__main-title">Регион доставки</h3>
+            <div class="application__change button button--white-black">изменить</div>
+          </div>
+          <ul class="application__list">
+            <li class="application__item">
+              <div class="application__left">
+                <h4 class="application__title">Город доставки*</h4>
+                <div class="padding-24"></div>
+                <!--                         checkbox                         -->
+                <label class="checkbox-label checkbox-label--active">
+                  <input type="checkbox" class="checkbox" checked>
+                  <span class="checkbox-fake"></span>
+                  <span>Краснодар, Краснодарский край, Юг, Россия</span>
+                </label>
+                <!--                         checkbox                         -->
+                <div class="padding-24"></div>
+                <div class="application__information">
+                  Город доставки устанавливается автоматически в соответсвии с выбранным Вами городом охранной компании в составе заказа.
+                </div>
+              </div>
+            </li>
+            <li class="application__bottom">
+              <button class="application__button button button--blue">продолжить</button>
+            </li>
+          </ul>
+        </li>
+        <li class="application__section application__section--hidden">
+          <div class="application__top">
+            <h3 class="application__main-title">Регион доставки</h3>
+            <div class="application__change button button--white-black">изменить</div>
+          </div>
+          <ul class="application__list">
+            <li class="application__item">
+              <div class="application__left">
+                <h4 class="application__title">Вид доставки</h4>
+                <div class="padding-24"></div>
+                <!--                         checkbox                         -->
+                <label class="checkbox-label checkbox-label--active">
+                  <input type="checkbox" class="checkbox" checked>
+                  <span class="checkbox-fake"></span>
+                  <span>СДЭК (доставка курьером)</span>
+                </label>
+                <!--                         checkbox                         -->
+                <div class="padding-24"></div>
+                <h4 class="application__title">
+                  <span class="application__title--grey">Дата и время монтажа:</span>
+                  <span>28 марта 2021, 10:00 - 12:00</span>
+                </h4>
+                <div class="padding-24"></div>
+                <h4 class="application__title">
+                  <span>изменить дату монтажа</span>
+                </h4>
+                <input type="date" class="application__calendar">
+              </div>
+              <div class="application__right">
+                <div class="application__info application__info--blue">Бесплатно</div>
+              </div>
+            </li>
+            <li class="application__bottom">
+              <button class="application__button button button--blue">продолжить</button>
+            </li>
+          </ul>
+        </li>
+        <li class="application__section application__section--hidden">
+          <div class="application__top">
+            <h3 class="application__main-title">Контакты покупателя</h3>
+            <div class="application__change button button--white-black">изменить</div>
+          </div>
+          <ul class="application__list">
+            <form class="application__form">
+              <input type="text" class="application__input" placeholder="Фамилия*">
+              <input type="text" class="application__input" placeholder="Имя*">
+              <input type="text" class="application__input" placeholder="Отчество">
+              <input type="text" class="application__input" placeholder="Телефон*">
+              <input type="text" class="application__input" placeholder="Email">
+              <textarea class="application__textarea" placeholder="Комментарий к заказу"></textarea>
+            </form>
+            </li>
+            <li class="application__bottom">
+              <button class="application__button button button--blue">продолжить</button>
+            </li>
+          </ul>
+        </li>
+        <li class="application__section application__section--hidden">
+          <div class="application__top">
+            <h3 class="application__main-title">Оплата</h3>
+            <div class="application__change button button--white-black">изменить</div>
+          </div>
+          <ul class="application__list">
+            <li class="application__item">
+              <div class="application__left">
+                <!--                         checkbox                         -->
+                <label class="checkbox-label checkbox-label--active">
+                  <input type="checkbox" class="checkbox" checked>
+                  <span class="checkbox-fake"></span>
+                  <span>Оплата картой онлайн</span>
+                </label>
+                <!--                         checkbox                         -->
+              </div>
+            </li>
+            <li class="application__bottom">
+              <a href="application-confirmed.html" class="application__button button button--blue">оформить заказ</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <!--                         application                         -->
+      <!--                         calculation                         -->
+      <div class="calculation">
+        <div class="calculation__line-info">
+          <span>Товары и услуги:</span>
+          <span class="calculation__value">48 000₽</span>
+        </div>
+        <div class="calculation__line-info">
+          <span>Страховка:</span>
+          <span class="calculation__value">1 000₽</span>
+        </div>
+        <div class="calculation__line"></div>
+        <div class="calculation__line-info">
+          <span>Итого:</span>
+          <span class="calculation__total">49 000₽</span>
+        </div>
+      </div>
+      <!--                         calculation                         -->
+      @@include('./components/question.html')
+    </div>
+  </main>
+  @@include('./components/contact-short.html')
+  @@include('./components/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
